@@ -14,6 +14,8 @@ using version 1.18.
 
 ## Architecture Overview
 
+![system architecture running locally](./localhost-architecture.jpg)
+
 ## Run a local Jaeger
 
 Using docker, run the all-in-one Jaeger setup locally.
@@ -66,6 +68,8 @@ $ for i in 1 2 3 4 5 6 7 8 9 10 11 12; do curl -k http://localhost:8080/api/comp
 # Run on Cloud Foundry
 
 ## Architecture Overview
+
+![system architecture running in Cloud Foundry](./cf-architecture.jpg)
 
 ## Run Jaeger somewhere on your infrastructure
 
