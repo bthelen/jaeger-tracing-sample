@@ -1,0 +1,12 @@
+server:
+  port: 8080
+
+factservice:
+  host: http://localhost:8083
+
+fibservice:
+  host: http://localhost:8082
+
+spring:
+  application:
+    name: compute-service

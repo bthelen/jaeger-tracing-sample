@@ -1,0 +1,12 @@
+---
+applications:
+  - name: fact-service
+    memory: 1G
+    path: ./target/fact-service-0.0.1-SNAPSHOT.jar
+    instances: 1
+    buildpacks:
+      - java_buildpack_offline
+    env:
+      SPRING_PROFILES_ACTIVE: prod
+    routes:
+      - route: fact-service.apps.internal

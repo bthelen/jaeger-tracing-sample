@@ -1,0 +1,12 @@
+---
+applications:
+  - name: fib-service
+    memory: 1G
+    path: ./target/fib-service-0.0.1-SNAPSHOT.jar
+    instances: 1
+    buildpacks:
+      - java_buildpack_offline
+    env:
+      SPRING_PROFILES_ACTIVE: prod
+    routes:
+      - route: fib-service.apps.internal

@@ -1,0 +1,11 @@
+---
+applications:
+  - name: jaeger-agent
+    memory: 256M
+    instances: 1
+    buildpacks:
+      - binary_buildpack
+    routes:
+      - route: jaeger-agent.apps.internal
+    command: ./jaeger-agent --reporter.grpc.host-port 192.168.101.53:14250
+    health-check-type: none

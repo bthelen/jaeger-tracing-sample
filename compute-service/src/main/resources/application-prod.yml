@@ -1,0 +1,15 @@
+server:
+  port: 8080
+
+factservice:
+  host: http://fact-service.apps.internal:8080
+
+fibservice:
+  host: http://fib-service.apps.internal:8080
+
+---
+opentracing:
+  jaeger:
+    udp-sender:
+      host: jaeger-agent.apps.internal
+      port: 6831
